@@ -341,7 +341,7 @@ end
 -- @return table The table for the specific list
 
 function game_library.getList(listName)
-	return list.Get(listName)
+	return instance.Sanitize(list.Get(listName))
 end
 
 end
